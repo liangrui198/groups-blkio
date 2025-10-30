@@ -1,0 +1,4 @@
+# 3. 设置IO限制（复制之前的配置）
+for device in 8:16 8:32 8:48 8:64 8:80 8:96 8:112 8:128 8:144 8:160 8:176 8:192; do
+    echo "$device rbps=58720256 wbps=48234496 riops=max wiops=max" >> /sys/fs/cgroup/shuffle/io.max
+done
